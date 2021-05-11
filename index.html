@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Kaylee K Portfolio </title>
+
+  <!-- Font Style -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap" rel="stylesheet">
+
+  <!-- This is my main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- This Brings in Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-link fixed-top" id="nav">
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active-slide" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#portfolio">My Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title Page -->
+  <div class="name">
+    <h1 class="myName">Kaylee Koehlinger</h1>
+    <h2 class="title">Web Development Student</h2>
+  </div>
+
+  <!-- About Me -->
+  <div id="about" class="row">
+    <div class="col-4" class="profile">
+      <img class="profile_pic" src="./assets/MyPhoto.jpg">
+    </div>
+    <div class="col-8">
+      <h2 class="hello">Hello.</h2> <br>
+      <h3 class="title-greeting">Thank you for visiting my page!</h3>
+      <div class="introText">
+        <p>An Indiana native with a passion for traveling all around the world, I have spent the last 6 years of my life living abroad in South Korea and Malaysia. After graduating from Butler University in Indianapolis, Indiana I moved to South Korea where I spent a year teaching English and studying Korean. For the next three years I worked with various companies to teach business English and educate companies on western culture business practices.</p>
+
+        <p>Then a new opportunity presented itself to manage the operations of an NGO in Malaysia focusedon peace-keeping efforts and conflict resolution. I worked with various community partners and government officials to bring programs to the community on practical conflict resolution tools.</p>
+
+        <p>After two years and with the COVID pandemic, I found myself back in my hometown of Fort Wayne, Indiana looking to explore new opportunites for career growth which led me to coding. Please feel free to take a look at my resume below and my porfolio. Thank you!
+        </p>
+
+        <div class="resume-link">
+          <a href="https://drive.google.com/file/d/1xup5DTKN9VZ8EZgRLv7xcOX_ahkudFq5/view?usp=sharing">My Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- My Portfolio -->
+  <div>
+    <p class="portfolio_subject" id="portfolio">My Portfolio</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="https://codepen.io/kkoehlin/pen/dyNYeNd" target="_blank">
+          <img class="project_image" src="./assets/CSS_Creature.png">
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="https://kkoehlin.github.io/StaticlayoutHW/" target="_blank">
+          <img class="project_image" src="./assets/Static.jpeg">
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="https://kkoehlin.github.io/api_challenge1/" target="_blank">
+          <img class="project_image" src="./assets/Howl.jpg">
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <a href="https://nasaphotos-5f02c.web.app/" target="_blank">
+          <img class="project_image" src="./assets/space2.jpg">
+        </a>
+      </div>
+
+      <div class="col">
+        <img class="project_image" src="./assets/coming_soon.jpg">
+      </div>
+
+      <div class="col">
+        <img class="project_image" src="./assets/coming_soon.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Me -->
+  <div class="contactBody">
+    <div id="container-form">
+      <p class="thank_you" id="contact">Thank's for sticking around! <br> Please reach out!</p>
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbybnvb"
+        method="post">
+        <fieldset id="fs-frm-inputs">
+
+          <div class="enterName">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          </div>
+
+          <div class="enterEmail">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          </div>
+
+          <div class="enterMessage">
+            <div>
+              <label for="message">Message</label>
+            </div>
+            <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </div>
+        </fieldset>
+        <input id="btn" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p id="footer_text">Also find me on:</p>
+    <div class="row align-items-center">
+      <div class="col">
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+          <img class="linkedin_logo" src="linkedin_log.svg">
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://github.com/KKoehlin" target="_blank">
+          <img class="github_logo" src="github.svg">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
